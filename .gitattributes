@@ -1,0 +1,4 @@
+# Ignore 3rd party libs that are included in the repo
+libs/ConsoleLib/inc/* linguist-vendored
+src/images/utils/* linguist-vendored
+
