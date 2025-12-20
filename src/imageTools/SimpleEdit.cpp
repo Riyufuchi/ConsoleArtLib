@@ -2,7 +2,7 @@
 // File       : SimpleEdit.cpp
 // Author     : riyufuchi
 // Created on : Mar 21, 2025
-// Last edit  : Mar 21, 2025
+// Last edit  : Dec 20, 2025
 // Copyright  : Copyright (c) 2025, riyufuchi
 // Description: consoleart
 //==============================================================================
@@ -48,7 +48,7 @@ bool SimpleEdit::isPixelGray(int r, int g, int b)
 	return std::abs(r - g) < 10 && std::abs(r - b) < 10 && std::abs(g - b) < 10;
 }
 
-bool SimpleEdit::removeGrayFromTexture(std::string originalPicturePath, std::string outputPicturePath)
+bool SimpleEdit::removeGrayFromTexture(const std::string& originalPicturePath,  const std::string& outputPicturePath)
 {
 	consoleartlib::ImagePNG originalTexture(originalPicturePath);
 	if (!originalTexture)
