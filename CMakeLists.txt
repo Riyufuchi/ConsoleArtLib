@@ -54,11 +54,11 @@ add_library(ConsoleLib STATIC IMPORTED)
 if (WIN32)
 	set_target_properties(ConsoleLib PROPERTIES
 	IMPORTED_LOCATION ${CONSOLE_LIB_DIR}/ConsoleLib.lib
-	INTERFACE_INCLUDE_DIRECTORIES ${CONSOLE_LIB_DIR}/inc)
+	INTERFACE_INCLUDE_DIRECTORIES ${CONSOLE_LIB_DIR})
 else()
 	set_target_properties(ConsoleLib PROPERTIES
 	IMPORTED_LOCATION ${CONSOLE_LIB_DIR}/libConsoleLib.a
-	INTERFACE_INCLUDE_DIRECTORIES ${CONSOLE_LIB_DIR}/inc)
+	INTERFACE_INCLUDE_DIRECTORIES ${CONSOLE_LIB_DIR})
 endif()
 
 #
@@ -72,6 +72,8 @@ file(GLOB_RECURSE APP_SOURCES
 )
 
 add_library(ConsoleArtLib STATIC ${APP_SOURCES})
+
+target_include_directories(ConsoleArtLib PRIVATE ${CONSOLE_LIB_DIR})
 
 target_link_libraries(ConsoleArtLib PRIVATE ConsoleLib)
 
