@@ -7,17 +7,12 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../includes/imageTools/Filter.h"
+#include "../consoleartlib/image_tools/filter.h"
 
-namespace consoleartlib
+namespace consoleartlib::filter
 {
-Filter::Filter()
-{
-}
-Filter::~Filter()
-{
-}
-bool Filter::purplefier(consoleartlib::Image& image)
+
+bool purplefier(consoleartlib::Image& image)
 {
 	if (!image)
 		return false;
@@ -34,7 +29,7 @@ bool Filter::purplefier(consoleartlib::Image& image)
 	}
 	return (image >> "-purplefied").saveImage();
 }
-bool Filter::purplefierSoft(consoleartlib::Image& image)
+bool purplefierSoft(consoleartlib::Image& image)
 {
 	if (!image)
 		return false;
@@ -59,7 +54,7 @@ bool Filter::purplefierSoft(consoleartlib::Image& image)
 	std::cout << "\n";
 	return (image >> "-purplefiedSoft").saveImage();
 }
-bool Filter::purplefierShading(consoleartlib::Image& image)
+bool purplefierShading(consoleartlib::Image& image)
 {
 	if (!image)
 		return false;
@@ -78,7 +73,7 @@ bool Filter::purplefierShading(consoleartlib::Image& image)
 	}
 	return (image >> "-purplefiedShaded").saveImage();
 }
-bool Filter::purplefierShadingSoft(consoleartlib::Image& image)
+bool purplefierShadingSoft(consoleartlib::Image& image)
 {
 	if (!image)
 		return false;
@@ -105,7 +100,7 @@ bool Filter::purplefierShadingSoft(consoleartlib::Image& image)
 	std::cout << "\n";
 	return (image >> "-purplefiedShadedSoft").saveImage();
 }
-bool Filter::matrixFilter(consoleartlib::Image& image)
+bool matrixFilter(consoleartlib::Image& image)
 {
 	if (!image)
 		return false;
@@ -126,4 +121,4 @@ bool Filter::matrixFilter(consoleartlib::Image& image)
 	}
 	return (image >> "-matrix").saveImage();
 }
-} /* namespace consoleart */
+}

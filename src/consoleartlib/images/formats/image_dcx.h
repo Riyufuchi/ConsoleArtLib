@@ -10,8 +10,8 @@
 #ifndef IMAGES_IMAGEDCX_H_
 #define IMAGES_IMAGEDCX_H_
 
-#include "ImagePCX.h"
-#include "../interfaces/IMultiPage.hpp"
+#include "image_pcx.h"
+#include "../interfaces/imulti_page.hpp"
 
 namespace consoleartlib
 {

@@ -10,7 +10,7 @@
 #ifndef IMAGES_IMAGETGA_H_
 #define IMAGES_IMAGETGA_H_
 
-#include "../base/Image.h"
+#include "../base/image.h"
 
 namespace consoleartlib
 {

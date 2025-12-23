@@ -10,15 +10,15 @@
 #ifndef IMAGES_FORMATS_HPP_
 #define IMAGES_FORMATS_HPP_
 
-#include "images/base/Image.h"
-#include "images/formats/ImageBMP.h"
-#include "images/formats/ImagePCX.h"
-#include "images/formats/ImagePPM.h"
-#include "images/formats/ImagePNG.h"
-#include "images/formats/ImageJPG.h"
-#include "images/formats/ImageGIF.h"
-#include "images/formats/ImageHDR.h"
-#include "images/formats/ImageTGA.h"
-#include "images/formats/ImageDCX.h"
+#include "images/base/image.h"
+#include "images/formats/image_bmp.h"
+#include "images/formats/image_dcx.h"
+#include "images/formats/image_ppm.h"
+#include "images/formats/image_png.h"
+#include "images/formats/image_jpg.h"
+#include "images/formats/image_gif.h"
+#include "images/formats/image_hdr.h"
+#include "images/formats/image_tga.h"
+#include "images/formats/image_pcx.h"
 
 #endif /* IMAGES_FORMATS_HPP_ */

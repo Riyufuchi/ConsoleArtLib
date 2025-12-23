@@ -12,9 +12,9 @@
 
 #include <iostream>
 
-#include "../ImageFormats.hpp"
+#include "../image_formats.hpp"
 
-namespace consoleartlib::imagetools
+namespace consoleartlib::image_tools
 {
 [[deprecated("Equal to image >> addStr")]]
 void addToImageName(consoleartlib::Image& image, const std::string addStr);
@@ -40,6 +40,4 @@ std::unique_ptr<unsigned char[]> convertPlanarPCXToInterleaved(const consoleartl
 std::unique_ptr<unsigned char[]> convertPlanarPCXToInterleaved(const consoleartlib::ImagePCX::PagePCX& image);
 bool convertImage(const consoleartlib::Image& source, consoleartlib::Image& target);
 }
-
-
-#endif /* IMAGEUTILS_IMAGETOOLS_H_ */
+#endif

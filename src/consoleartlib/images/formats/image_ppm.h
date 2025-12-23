@@ -13,7 +13,7 @@
 #include <string>
 #include <sstream>
 
-#include "../base/Image.h"
+#include "../base/image.h"
 
 #include "consolelib/tools/data_tools.h"
 

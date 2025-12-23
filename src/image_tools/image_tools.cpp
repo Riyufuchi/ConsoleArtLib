@@ -7,9 +7,9 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../includes/imageTools/ImageTools.h"
+#include "../consoleartlib/image_tools/image_tools.h"
 
-namespace consoleartlib::imagetools
+namespace consoleartlib::image_tools
 {
 
 std::unique_ptr<unsigned char[]> convertPlanarPCXToInterleaved(const consoleartlib::ImagePCX::PagePCX& image)

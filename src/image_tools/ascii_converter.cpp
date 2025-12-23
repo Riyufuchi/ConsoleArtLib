@@ -6,7 +6,7 @@
 // Description : This class converts bitmap image to ASCII/desired char set
 //============================================================================
 
-#include "../includes/imageTools/AsciiConverter.h"
+#include "../consoleartlib/image_tools/ascii_converter.h"
 
 namespace consoleartlib
 {

@@ -13,7 +13,7 @@
 #include <cmath>
 #include <string.h>
 #include <memory>
-#include "../images/base/Image.h"
+#include "../images/base/image.h"
 
 namespace consoleartlib
 {

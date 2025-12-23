@@ -13,7 +13,7 @@
 #include <string>
 #include <vector>
 
-#include "../base/Image.h"
+#include "../base/image.h"
 
 namespace consoleartlib
 {

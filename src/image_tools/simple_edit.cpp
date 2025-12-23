@@ -7,19 +7,12 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../includes/imageTools/SimpleEdit.h"
+#include "../consoleartlib/image_tools/simple_edit.h"
 
-namespace consoleartlib
+namespace consoleartlib::simple_edit
 {
-SimpleEdit::SimpleEdit()
-{
-}
 
-SimpleEdit::~SimpleEdit()
-{
-}
-
-bool SimpleEdit::overlayTextures(const consoleartlib::Image& bottomlayer, const consoleartlib::Image& overlay)
+bool overlayTextures(const consoleartlib::Image& bottomlayer, const consoleartlib::Image& overlay)
 {
 	if (!(bottomlayer && overlay))
 		return false;
@@ -43,12 +36,12 @@ bool SimpleEdit::overlayTextures(const consoleartlib::Image& bottomlayer, const 
 	return resultImage.saveImage();
 }
 
-bool SimpleEdit::isPixelGray(int r, int g, int b)
+bool isPixelGray(int r, int g, int b)
 {
 	return std::abs(r - g) < 10 && std::abs(r - b) < 10 && std::abs(g - b) < 10;
 }
 
-bool SimpleEdit::removeGrayFromTexture(const std::string& originalPicturePath,  const std::string& outputPicturePath)
+bool removeGrayFromTexture(const std::string& originalPicturePath,  const std::string& outputPicturePath)
 {
 	consoleartlib::ImagePNG originalTexture(originalPicturePath);
 	if (!originalTexture)
@@ -68,7 +61,7 @@ bool SimpleEdit::removeGrayFromTexture(const std::string& originalPicturePath,  
 	return targetTexture.saveImage();
 }
 
-bool SimpleEdit::removeGrayFromTexture(consoleartlib::Image& originalTexture)
+bool removeGrayFromTexture(consoleartlib::Image& originalTexture)
 {
 	if (!originalTexture)
 		return false;
@@ -88,4 +81,4 @@ bool SimpleEdit::removeGrayFromTexture(consoleartlib::Image& originalTexture)
 	return originalTexture.saveImage();
 }
 
-} /* namespace ImageUtils */
+}

@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../../includes/images/base/Image.h"
+#include "../../consoleartlib/images/base/image.h"
 
 namespace consoleartlib
 {

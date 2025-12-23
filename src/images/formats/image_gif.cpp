@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../../includes/images/formats/ImageGIF.h"
+#include "../../consoleartlib/images/formats/image_gif.h"
 
 #include "../utils/stb_image.h"
 #include "../utils/stb_image_write.h"

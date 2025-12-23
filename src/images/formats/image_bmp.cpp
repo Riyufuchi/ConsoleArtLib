@@ -8,7 +8,7 @@
 //               and color data. The image must have the origin in the bottom left corner.
 //============================================================================
 
-#include "../../includes/images/formats/ImageBMP.h"
+#include "../../consoleartlib/images/formats/image_bmp.h"
 
 namespace consoleartlib
 {

@@ -1,29 +1,32 @@
 //==============================================================================
-// File       : ImagePNG.h
+// File       : ImageHDR.h
 // Author     : riyufuchi
-// Created on : Feb 17, 2025
+// Created on : Nov 07, 2025
 // Last edit  : Dec 19, 2025
 // Copyright  : Copyright (c) 2025, riyufuchi
 // Description: consoleart
 //==============================================================================
 
-#ifndef IMAGES_IMAGEPNG_H_
-#define IMAGES_IMAGEPNG_H_
+#ifndef IMAGES_IMAGEHDR_H_
+#define IMAGES_IMAGEHDR_H_
 
-#include <iostream>
-#include <string.h>
-
-#include "../base/Image.h"
-//#include "../utils/stb_image.h"
+#include "../base/image.h"
 
 namespace consoleartlib
 {
-class ImagePNG: public Image
+
+class ImageHDR: public Image
 {
+private:
+	std::vector<float> pixelDataHDR;
 public:
-	ImagePNG(const std::string& filepath);
-	ImagePNG(const std::string& filepath, int width, int height, int channels);
-	~ImagePNG();
+	ImageHDR(const std::string& filename, bool convert = true);
+	virtual ~ImageHDR();
+	PixelHDR getPixelHDR(int x, int y) const;
+	void setPixelHDR(int x, int y, PixelHDR newPixel);
+	void convertTo8bit();
+	void convertFrom8bit();
+	// Overrides
 	virtual consoleartlib::Pixel getPixel(int x, int y) const override;
 	virtual void setPixel(int x, int y, consoleartlib::Pixel newPixel) override;
 	virtual bool saveImage() const override;
@@ -32,4 +35,4 @@ public:
 
 } /* namespace consoleartlib */
 
-#endif /* IMAGES_IMAGEPNG_H_ */
+#endif /* IMAGES_IMAGEHDR_H_ */

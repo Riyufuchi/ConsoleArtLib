@@ -18,7 +18,7 @@
 
 #include "../../images/utils/stb_image.h"
 #include "../../images/utils/stb_image_write.h"
-#include "../images/utils/Pixels.hpp"
+#include "../images/utils/pixels.hpp"
 
 namespace consoleartlib
 {
@@ -32,5 +32,5 @@ public:
 	consoleartlib::PixelRGB findClosestColor(uint8_t r, uint8_t g, uint8_t b);
 	void ditherImage(std::string imagepath);
 };
-} /* namespace consoleart */
-#endif /* CONSOLEART_IMAGETOOLS_DITHERING_H_ */
+}
+#endif

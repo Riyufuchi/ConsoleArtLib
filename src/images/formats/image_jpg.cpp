@@ -9,7 +9,7 @@
 
 #include "../utils/stb_image.h"
 #include "../utils/stb_image_write.h"
-#include "../../includes/images/formats/ImageJPG.h"
+#include "../../consoleartlib/images/formats/image_jpg.h"
 
 namespace consoleartlib
 {

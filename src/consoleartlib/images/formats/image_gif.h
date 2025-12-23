@@ -10,9 +10,9 @@
 #ifndef IMAGES_IMAGEGIF_H_
 #define IMAGES_IMAGEGIF_H_
 
-#include "../base/Image.h"
-#include "../interfaces/IAnimated.hpp"
-#include "../interfaces/IMultiPage.hpp"
+#include "../base/image.h"
+#include "../interfaces/ianimated.hpp"
+#include "../interfaces/imulti_page.hpp"
 
 namespace consoleartlib
 {

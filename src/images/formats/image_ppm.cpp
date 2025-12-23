@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../../includes/images/formats/ImagePPM.h"
+#include "../../consoleartlib/images/formats/image_ppm.h"
 
 namespace consoleartlib
 {

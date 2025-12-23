@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../../includes/images/formats/ImagePCX.h"
+#include "../../consoleartlib/images/formats/image_pcx.h"
 
 namespace consoleartlib
 {

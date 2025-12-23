@@ -20,7 +20,7 @@
 #include <cmath>
 #include <string>
 
-#include "../utils/Pixels.hpp"
+#include "../utils/pixels.hpp"
 
 namespace consoleartlib
 {

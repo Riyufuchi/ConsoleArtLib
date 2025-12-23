@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../../includes/images/formats/ImageDCX.h"
+#include "../../consoleartlib/images/formats/image_dcx.h"
 
 namespace consoleartlib
 {

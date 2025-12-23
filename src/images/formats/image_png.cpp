@@ -12,7 +12,7 @@
 #include "../utils/stb_image.h"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "../utils/stb_image_write.h"
-#include "../../includes/images/formats/ImagePNG.h"
+#include "../../consoleartlib/images/formats/image_png.h"
 
 namespace consoleartlib
 {

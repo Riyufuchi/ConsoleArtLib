@@ -9,7 +9,7 @@
 
 #include "../utils/stb_image.h"
 #include "../utils/stb_image_write.h"
-#include "../../includes/images/formats/ImageHDR.h"
+#include "../../consoleartlib/images/formats/image_hdr.h"
 
 namespace consoleartlib
 {

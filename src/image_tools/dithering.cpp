@@ -7,7 +7,7 @@
 // Description: consoleart
 //==============================================================================
 
-#include "../includes/imageTools/Dithering.h"
+#include "../consoleartlib/image_tools/dithering.h"
 
 namespace consoleartlib
 {
