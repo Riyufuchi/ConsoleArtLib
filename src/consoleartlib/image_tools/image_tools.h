@@ -22,7 +22,7 @@ int compareImages(const consoleartlib::Image& image1, const consoleartlib::Image
 bool signatureToImage(consoleartlib::Image& canvasImage, const consoleartlib::Image&signature);
 void nearestNeighbor(const consoleartlib::Image& originalImage, consoleartlib::Image& scaledImage);
 unsigned char* normalizeToRGBA(const consoleartlib::Image& image, consoleartlib::ImageInfo& info);
-unsigned char* convertPlanarToInterleaved(const unsigned char* planarData, int width, int height)
+inline unsigned char* convertPlanarToInterleaved(const unsigned char* planarData, int width, int height)
 {
 	int totalPixels = width * height;
 	unsigned char* interleavedData = new unsigned char[totalPixels * 3]; // Assuming 3 channels (RGB)

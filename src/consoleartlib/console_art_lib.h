@@ -14,8 +14,8 @@
 #include <string>
 #include <format>
 
-#define _VERSION "1.3"
-#define _COPYRIGHT_HEADER "Riyufuchi (c) 2025"
+#define _VERSION "1.4"
+#define _COPYRIGHT_HEADER "Riyufuchi (c) 2025 - 2026"
 
 namespace consoleartlib
 {
